@@ -21,6 +21,7 @@ from transformers import (
     TrainingArguments,
 )
 from peft import LoraConfig, get_peft_model
+import wandb
 
 
 def setup_logging(log_level: str = "INFO"):
@@ -131,6 +132,9 @@ def main(
 
     logger = logging.getLogger(__name__)
     logger.info("Starting LLM fine-tuning...")
+
+    # Initialize wandb
+    wandb.init(project="llm-fine-tuning", name=f"{model_name.split('/')[-1]}-{dataset_name}")
 
     # Load tokenizer
     logger.info(f"Loading tokenizer: {model_name}")
