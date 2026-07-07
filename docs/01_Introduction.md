@@ -1,8 +1,18 @@
-# Introduction to Fine-Tuning Large Language Models
+# 01 - Introduction to LLM Fine-Tuning
 
 Welcome to this comprehensive course on fine-tuning Large Language Models (LLMs). This course is designed to take you from the basics of model training and transfer learning to advanced techniques in fine-tuning LLMs, vision-language models, and more. Whether you're a beginner or an experienced practitioner, you'll gain hands-on experience with the latest frameworks and tools.
 
 Throughout the course, we'll cover theoretical concepts, practical implementations, and real-world applications. By the end, you'll be equipped to fine-tune models for various tasks, understand when to use fine-tuning versus other approaches like RAG or AI agents, and deploy your fine-tuned models effectively.
+
+## Learning Goals
+
+By the end of this guide, you should be able to:
+
+- Explain pretraining, transfer learning, fine-tuning, and alignment.
+- Choose between fine-tuning, Retrieval-Augmented Generation (RAG), and agents.
+- Build and evaluate supervised fine-tuning (SFT) pipelines.
+- Apply PEFT methods like LoRA and QLoRA efficiently.
+- Understand RLHF-style alignment methods (PPO, DPO) at a practical level.
 
 ## Course Content Structure
 
@@ -84,3 +94,19 @@ Throughout the course, we'll cover theoretical concepts, practical implementatio
   - [ ] Supervised Fine-Tuning (SFT) vs Unsupervised Fine-Tuning (USFT) (fine-tuning variants)
   - [ ] Embedding for retrieval and semantic search
   - [ ] When to fine-tune embeddings vs models
+
+## Recommended Prerequisites
+
+- Python and basic PyTorch familiarity
+- Transformer basics
+- GPU training basics (VRAM, batch size, mixed precision)
+- Dataset handling with Hugging Face Datasets
+
+## Suggested Study Workflow
+
+- Read one section.
+- Build a minimal runnable example.
+- Evaluate with clear metrics.
+- Record what worked, what failed, and why.
+
+Continue to Section 02 for a complete pretraining and model-foundation guide.
